@@ -13,7 +13,7 @@ that you want to do.
 8. HEROKU
 
 # Screenshots
-![](SS/todo1.png)
+![](SS/landing.png)
 User can customize title of their todo list by adding the title at the end of website URL 
 example:
 ![](SS/todo2.png)
