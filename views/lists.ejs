@@ -1,0 +1,35 @@
+<%- include("header") -%> 
+    <div class="box" id="heading">
+        <h1><%= listTitle %></h1>
+    </div>
+ <div class="box">
+  
+     <form action="/delete" method="post">
+       <!-- newListItems we're passing over is an array of Mongo documents.
+
+       Each of these documents or each of these items that we're looping through has a name as well as an ID. -->
+   <% newListItems.forEach(function(i){  %>
+    <div class="item">
+        <input type="checkbox" name="check" value="<%=i._id%>" onChange="this.form.submit()" >
+        <p><%=  i.name  %></p>
+      </div>
+  <% }) %>
+  <input type="hidden" name="listname" value="<%= listTitle %>"></input>
+</form>
+    <!-- <% for (let i=0; i<newListItems.length; i++) { %>
+        <div class="item">
+          <input type="checkbox">
+          <p><%=  newListItems[i].name  %></p>
+        </div>
+        <% } %>
+  
+         -->
+    
+    <form class="item" action="/" method="post">
+        <input type="text" name="added" placeholder="New item" autocomplete="off">
+        <button type="submit" name="list" value=<%= listTitle %>>+</button>
+    </form>
+    </div>
+ 
+ 
+    <%- include("footer") -%> 
