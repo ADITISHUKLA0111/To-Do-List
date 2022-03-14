@@ -14,9 +14,11 @@ that you want to do.
 
 # Screenshots
 ![](SS/landing.png)
-User can customize title of their todo list by adding the title at the end of website URL 
+
+User can customize title of their todo list by adding the title at the end of website URL. 
 example:
 ![](SS/todo2.png)
+
 ![](SS/todo3.png)
 
 # Project is hosted [here](https://nameless-depths-78301.herokuapp.com/)
